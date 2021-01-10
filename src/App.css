@@ -1,38 +1,270 @@
-.App {
+
+/* Header Section */
+.header_section{
+  height: 17vh;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo img{
+  height: 20vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Award Section */
+.award_section{
+  height: 95vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 3em;
+}
+.award_left img{
+  width: 25vw;
+  height: 80vh;
+  margin-right: 2em;
+  margin-left: 5.2em;
+}
+.award_right{
+  width: 50vw;
+  height: 23vh;
+}
+.award_right img{
+  width: 100vh;
+  height: auto; 
+}
+#main_tag{
+  font-weight: bold;
+}
+/* Service Section */
+.service_section{
+  border-bottom: 2px solid red;
+  text-align: center;
+}
+.service_section img{
+  width: 61vw;
+  height: 43vh;
+}
+/* Top Footer Section */
+.top_footer{
+  height: 130px;
+  padding-top: 25px;
+  text-align: center;
+  width: 100vw;
+}
+.top_footer span{
+  color:#ec3237;
+}
+/* Bottom Footer Section */
+.bottom-footer{
+  background-color: #ec3237;
+  width: 100vw;
+}
+.Icons{
+  height: 120px;
+  padding-top: 45px;
+  padding-bottom: 70px;
+  color: #ffffff;
+  display: flex;
+}
+.part_icon{
+  display: flex;
+  margin: 0em 3em;
+}
+.footer_icon{
+  background-color: #ffffff;
+  color:#ec3237;
+  font-size: 35px;
+  border-radius: 50%;
+  padding: 4px 5px;
+  margin-right: 10px; 
+}
+.icon_globe{
+  color: #ffffff;
+  background-color:#ec3237;
+  font-size: 40px;
+  padding: 4px 5px;
+  margin-right: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media  (min-width: 1024px) and (max-width: 1280px)  {
+  .header_section{
+    height: 16vh;
   }
-  to {
-    transform: rotate(360deg);
+  .logo img{
+    height: 15vh;
+  }
+  .award_section{
+    height: 55vh;
+    padding: 1em;
+  }
+  
+  .award_left img{
+    width: 23vw;
+    height: 45vh;
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+  .award_right {
+    width: 90vw;
+  }
+  .award_right img{
+    width: 70vw;
+  }
+  .service_section img{
+    width: 75vw;
+    height: 38vh;
+  }
+  .top_footer{
+    height: 130px;
+    padding-top: 10px;
+  }
+  .part_icon{
+    margin: 0em 2em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .award_section{
+    display: inline-block;
+    padding: 1em;
+  }
+  .award_left img{
+    width: 50vw;
+    height: 70vh;
+    margin-left: 5em;
+    padding-left: 5em; 
+  }
+  .award_right{
+    width: 93vw;
+  }
+  .award_right img{
+    width: 92vw;
+  }
+  .service_section{
+    margin-top: 2em;
+    padding: 1em;
+  }
+  .service_section img{
+    width: 92vw;
+    height: 40vh;
+  }
+  .top_footer{
+    height: 180px;
+    padding: 1.1em;
+    width: 100vw;
+  }
+  .Icons{
+    padding: 0px 30px;
+    height: 200px;
+    padding-top: 45px;
+    display: inline-block;  
+  }
+  .part_icon{
+    margin: 0em 12em;
+    margin-bottom: .5em;
+  }
+  
+}
+
+@media (min-width: 370px) and (max-width: 768px) {
+  .logo img {
+    height: 15vh;
+}
+  .header_section{
+    height: 10vh;
+  }
+  .award_section{
+    display: inline-block;
+    padding: 2em;
+  }
+  .award_left img{
+    width: 80vw;
+    height: 70vh;
+    margin-right: 0em;
+    margin-left: 1em; 
+  }
+  .award_right{
+    width: 86vw;
+  }
+  .award_right img{
+    width: 85vw;
+  }
+  .service_section{
+    margin-top: 1em;
+    padding: 1em;
+  }
+  .service_section img{
+    width: 85vw;
+    height: 30vh;
+  }
+  .top_footer{
+    height: 285px;
+    padding: 1em;
+    width: 100vw;
+  }
+  .Icons{
+    padding: 0px 10px;
+    height: 220px;
+    padding-top: 40px;
+    padding-bottom: 10px; 
+    display: inline-block;  
+  }
+  .part_icon{
+    margin: 0em 4em 0em 5.1em;
+    margin-bottom: .5em;
+  }
+  
+}
+  @media (min-width: 280px) and (max-width: 370px) {
+    .logo img {
+      height: 12vh;
+  }
+  .header_section {
+    height: 10vh;
+  }
+.award_section {
+  height: 91vh;
+  display: inline-block;
+  padding: 1em;
+}
+.award_left img {
+  width: 75vw;
+  height: 57vh;
+  margin-right: 0em;
+  margin-left: 1.1em;
+}
+.award_right {
+  width: 94vw;
+  padding-left: 1em;
+}
+.award_right img {
+  width: 40vh;
+}
+.service_section{
+  margin-top: 1em;
+  padding: 1em;
+  width: 106vw;
+}
+.service_section img {
+  width: 90vw;
+  height: 25vh;
+}
+.top_footer {
+  height: 430px;
+  padding-top: 10px;
+  width: 100vw;
+}
+.Icons {
+  height: 252px;
+  padding-top: 15px;
+  display: inline-block;
+  text-align: center;
+}
+.part_icon {
+  display: inline-block;
+  margin: 0em 0em;
+}
+.footer_icon {
+  font-size: 30px;
+  margin-right: 5px;
+  
+}
+.bottom-footer {
+  width: 106vw;
   }
 }
